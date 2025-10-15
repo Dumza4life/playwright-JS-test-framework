@@ -1,6 +1,6 @@
 # Playwright JS Test Automation Framework
 
-This repository contains a simple yet comprehensive test automation framework built with **Playwright** and **JavaScript**. It demonstrates skills in both **User Interface (UI)** and **Application Programming Interface (API)** test automation, along with proper test data management, custom reporting using **Monocart Reporter**, and continuous integration/continuous deployment (CI/CD) setup using **GitHub Actions**.
+This repository contains a simple test automation framework built with **Playwright** and **JavaScript**. It demonstrates skills in both **User Interface (UI)** and **Application Programming Interface (API)** test automation, along with proper test data management, custom reporting using **Monocart Reporter**, and continuous integration/continuous deployment (CI/CD) setup using **GitHub Actions**.
 
 ## 1. Test Targets
 
