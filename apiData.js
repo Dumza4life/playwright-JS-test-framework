@@ -14,5 +14,5 @@ export const apiData = {
             checkout: '2024-01-05'
         },
         additionalneeds: 'Breakfast'
-    }
+    } 
 };
