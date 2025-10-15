@@ -1,11 +1,11 @@
 // saucedemo.spec.js
 import { test, expect } from '@playwright/test';
-import { LoginPage } from './LoginPage';
-import { InventoryPage } from './InventoryPage';
-import { CartPage } from './CartPage';
-import { CheckoutStepOnePage } from './CheckoutStepOnePage';
-import { CheckoutStepTwoPage } from './CheckoutStepTwoPage';
-import { CheckoutCompletePage } from './CheckoutCompletePage';
+import { LoginPage } from './pages/LoginPage';
+import { InventoryPage } from './pages/InventoryPage';
+import { CartPage } from './pages/CartPage';
+import { CheckoutStepOnePage } from './pages/CheckoutStepOnePage';
+import { CheckoutStepTwoPage } from './pages/CheckoutStepTwoPage';
+import { CheckoutCompletePage } from './pages/CheckoutCompletePage';
 import { userData } from './userData';
 
 test.describe('SauceDemo UI Tests', () => {
