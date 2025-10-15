@@ -1,7 +1,7 @@
 // booking.spec.js
 import { test, expect } from '@playwright/test';
-import { APIHelper } from './APIHelper';
-import { apiData } from './apiData';
+import { APIHelper } from '../APIHelper';
+import { apiData } from '../apiData';
 
 // Run API tests serially to share state like bookingId
 const serial = test.describe.serial;
