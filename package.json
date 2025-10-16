@@ -1,6 +1,7 @@
 {
   "name": "playwright-js-test-framework",
   "version": "1.0.0",
+  "type": "module",
   "main": "apiData.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,6 +12,7 @@
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.56.0",
-    "monocart-reporter": "^2.9.23"
+    "monocart-reporter": "^2.9.23",
+    "dotenv": "^16.3.1"
   }
 }

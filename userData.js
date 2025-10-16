@@ -1,32 +1,37 @@
-// data/userData.js
+// userData.js - Secure test data using environment variables
+import dotenv from 'dotenv';
+
+// Load environment variables
+dotenv.config();
+
 export const userData = {
     standardUser: {
-        username: 'standard_user',
-        password: 'secret_sauce'
+        username: process.env.STANDARD_USERNAME || 'standard_user',
+        password: process.env.STANDARD_PASSWORD || 'secret_sauce'
     },
     lockedOutUser: {
-        username: 'locked_out_user',
-        password: 'secret_sauce'
+        username: process.env.LOCKED_OUT_USERNAME || 'locked_out_user',
+        password: process.env.LOCKED_OUT_PASSWORD || 'secret_sauce'
     },
     problemUser: {
-        username: 'problem_user',
-        password: 'secret_sauce'
+        username: process.env.PROBLEM_USERNAME || 'problem_user',
+        password: process.env.PROBLEM_PASSWORD || 'secret_sauce'
     },
     performanceGlitchUser: {
-        username: 'performance_glitch_user',
-        password: 'secret_sauce'
+        username: process.env.PERFORMANCE_GLITCH_USERNAME || 'performance_glitch_user',
+        password: process.env.PERFORMANCE_GLITCH_PASSWORD || 'secret_sauce'
     },
     errorUser: {
-        username: 'error_user',
-        password: 'secret_sauce'
+        username: process.env.ERROR_USERNAME || 'error_user',
+        password: process.env.ERROR_PASSWORD || 'secret_sauce'
     },
     visualUser: {
-        username: 'visual_user',
-        password: 'secret_sauce'
+        username: process.env.VISUAL_USERNAME || 'visual_user',
+        password: process.env.VISUAL_PASSWORD || 'secret_sauce'
     },
     checkoutInfo: {
-        firstName: 'Ndumiso',
-        lastName: 'Mayisela',
-        zipCode: '12345'
+        firstName: process.env.CHECKOUT_FIRST_NAME || 'Ndumiso',
+        lastName: process.env.CHECKOUT_LAST_NAME || 'Mayisela',
+        zipCode: process.env.CHECKOUT_ZIP_CODE || '12345'
     }
 };
