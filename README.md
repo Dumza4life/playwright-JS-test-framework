@@ -1,6 +1,6 @@
 # Playwright JS Test Automation Framework
 
-This repository contains a simple test automation framework built with Playwright and JavaScript for Interface (UI) and Application Programming Interface (API) test automation, along with proper test data management, custom reporting using Monocart Reporter, and continuous integration/continuous deployment (CI/CD) setup using GitHub Actions.
+This repository contains a simple test automation framework built with Playwright and JavaScript for User Interface (UI) and Application Programming Interface (API) test automation, along with proper test data management, custom reporting using Monocart Reporter, and continuous integration/continuous deployment (CI/CD) setup using GitHub Actions.
 
 ## 1. Test Targets
 
@@ -114,14 +114,17 @@ This framework implements secure test data management using environment variable
    cp env.example .env
    ```
 
-2. **Edit the `.env` file with your actual test data:**
+2. **Edit the `.env` file and add test data:**
    ```bash
-   # Update the values in .env file with your real test data
-   API_USERNAME=your_actual_api_username
-   API_PASSWORD=your_actual_api_password
+   # API credentials are public test data - no changes needed
+   API_USERNAME=admin
+   API_PASSWORD=password123
+   
+   # Update with any random details, can be John Doe, 7708 does not matter or you can use your details
    CHECKOUT_FIRST_NAME=your_actual_first_name
    CHECKOUT_LAST_NAME=your_actual_last_name
-   # ... other variables with your actual values
+   CHECKOUT_ZIP_CODE=your_actual_zip_code
+   # ... other personal variables with your actual values
    ```
 
 3. **Install dependencies (including dotenv):**
