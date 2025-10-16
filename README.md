@@ -16,7 +16,7 @@ The framework is structured to promote maintainability and readability:
 | Directory/File | Purpose |
 | :--- | :--- |
 | `playwright.config.js` | Main Playwright configuration, including projects for UI and API tests, and Monocart reporter setup. |
-| `UI_tests/` | Contains UI test specifications and Page Object Model (POM) files. |
+| `UI_tests/` | Contains UI test specifications. |
 | `Api_tests/` | Contains API test specifications and helper classes. |
 | `pages/` | Contains Page Object Model (POM) files for UI test automation. |
 | `userData.js` | Contains user credentials for UI login and checkout information (uses environment variables). |
@@ -155,10 +155,10 @@ The framework is configured with a GitHub Actions workflow (`.github/workflows/p
 
 ### CI/CD Security Features
 
-- ✅ **Environment Variables**: All test data is securely provided via GitHub Actions environment variables
-- ✅ **No Hardcoded Secrets**: Sensitive data is never committed to the repository
-- ✅ **Secure Test Data**: All credentials and test data are externalized
-- ✅ **Artifact Generation**: Test reports are automatically generated and uploaded
-- ✅ **Parallel Execution**: Tests run efficiently with proper worker configuration
+- **Environment Variables**: All test data is securely provided via GitHub Actions environment variables
+- **No Hardcoded Secrets**: Sensitive data is never committed to the repository
+- **Secure Test Data**: All credentials and test data are externalized
+- **Artifact Generation**: Test reports are automatically generated and uploaded
+- **Parallel Execution**: Tests run efficiently with proper worker configuration
 
 You can view the test execution evidence by checking the **Actions** tab in the GitHub repository and downloading the `playwright-report` artifact from a completed run.
